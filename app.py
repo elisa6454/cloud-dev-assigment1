@@ -18,6 +18,18 @@ def cv():
 def tech():
     return render_template('tech.html')
 
+@app.route('/tech/html_css')
+def tech_html_css():
+    return render_template('tech_html_css.html')
+
+@app.route('/tech/react')
+def tech_react():
+    return render_template('tech_react.html')
+
+@app.route('/tech/blender')
+def tech_blender():
+    return render_template('tech_blender.html')
+
 @app.route('/interests')
 def interests():
     return render_template('interests.html')

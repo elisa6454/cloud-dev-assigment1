@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block title %}Technologies{% endblock %} {% block
+content %}
+<h1>My Favorite Technologies</h1>
+<ul>
+  <li><a href="{{ url_for('tech_html_css') }}">HTML & CSS</a></li>
+  <li><a href="{{ url_for('tech_react') }}">React</a></li>
+  <li>
+    <a href="{{ url_for('tech_blender') }}">Blender</a>
+  </li>
+</ul>
+{% endblock %}
