@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1>Welcome to YUNHEE's website!</h1>
+<form action="/submit" method="POST">
+  <input type="email" name="email" placeholder="Your email" required />
+  <textarea name="message" placeholder="Your message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}
