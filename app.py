@@ -36,10 +36,11 @@ def interests():
 
 @app.route('/submit', methods=['POST'])
 def submit():
+    name = request.form['name']
     email = request.form['email']
     message = request.form['message']
     with open('comments.txt', 'a') as f:
-        f.write(f'{email}: {message}\n')
+        f.write(f'{name}, {email}: {message}\n')
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
