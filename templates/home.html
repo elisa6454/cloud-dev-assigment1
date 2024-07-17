@@ -1,9 +1,40 @@
 {% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
 %}
 <h1>Welcome to YUNHEE's website!</h1>
-<form action="/submit" method="POST">
-  <input type="email" name="email" placeholder="Your email" required />
-  <textarea name="message" placeholder="Your message" required></textarea>
-  <button type="submit">Submit</button>
+<h2>Send me a message!</h2>
+<p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+
+<form action="{{ url_for('submit') }}" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email address"
+      required
+    />
+  </div>
+  <div class="form-group full-width">
+    <label for="message">Your Message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      placeholder="Hi, I checked your webpage and it looks nice."
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="submit-button">Shoot</button>
 </form>
 {% endblock %}
