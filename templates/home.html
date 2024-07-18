@@ -1,5 +1,9 @@
-{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
-%}
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/home.css') }}"
+/>
+{% endblock %} {% block content %}
 <h1>Welcome to YUNHEE's website!</h1>
 <h2>Send me a message!</h2>
 <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
