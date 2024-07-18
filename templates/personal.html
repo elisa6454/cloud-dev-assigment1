@@ -1,5 +1,37 @@
 {% extends 'base.html' %} {% block title %}Personal{% endblock %} {% block
-content %}
+styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/personal.css') }}"
+/>
+{% endblock %} {% block content %}
 <h1>Personal Information</h1>
-<p>Here is some personal information about me.</p>
+<div class="personal-info">
+  <div class="left">
+    <img
+      src="{{ url_for('static', filename='img/profile.jpg') }}"
+      alt="Profile Picture"
+      class="profile-img"
+    />
+  </div>
+  <div class="right">
+    <h1>Yunhee Jeong</h1>
+    <p>Nationality: Republic of Korea 🇰🇷</p>
+    <p>Current Residence: Ireland 🇮🇪</p>
+    <p>Phone: 083-340-6789</p>
+    <p>Address: Killeshin Road, Graiguecullen, Carlow</p>
+    <p>About me: I'm a student passionate about web development and design.</p>
+    <p>Favorite Coffee: Iced Americano</p>
+    <p>Favorite Pizza: Margherita</p>
+    <p>Favorite Chocolate Brands: Lindt, Ferrero Rocher</p>
+    <p>
+      Current Goals: Graduate from university, Complete an internship, Find a
+      job
+    </p>
+    <p>
+      Hobbies: Skiing, Video editing, Traveling, Watching movies, Recently
+      started baking as a new hobby
+    </p>
+  </div>
+</div>
 {% endblock %}
