@@ -1,0 +1,51 @@
+.personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  background: #f7f8fa;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.personal-info .left,
+.personal-info .right {
+  flex: 1;
+  padding: 20px;
+}
+
+.personal-info .left {
+  text-align: center;
+}
+
+.profile-img {
+  border-radius: 5%;
+  width: 400px;
+  height: 400px;
+}
+
+.personal-info .right {
+  text-align: left;
+}
+
+.personal-info h1 {
+  color: #4a00e0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.personal-info h2 {
+  color: #4a00e0;
+  margin-top: 20px;
+}
+
+.personal-info p {
+  text-align: left;
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.6;
+}
