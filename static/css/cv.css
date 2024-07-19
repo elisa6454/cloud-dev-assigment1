@@ -1,0 +1,87 @@
+.cv-container {
+  background: #fff;
+  margin: 20px auto;
+  padding: 40px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.cv-container h1,
+.cv-container h2,
+.cv-container h3 {
+  color: #4a00e0;
+  text-align: center;
+}
+
+.cv-container h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.cv-container h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #4a00e0;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.cv-container h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.cv-container p {
+  line-height: 1.8;
+  margin: 10px 0;
+  color: #333;
+  text-align: left;
+}
+
+.contact-info,
+.education,
+.experience,
+.skills {
+  margin-top: 30px;
+}
+
+.contact-info p,
+.education p,
+.experience p,
+.skills p {
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #4a00e0;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.project {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project p {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #99acf1;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  color: #fff;
+}
