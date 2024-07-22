@@ -1,0 +1,103 @@
+{% extends 'base.html' %} {% block title %}JavaScript{% endblock %} {% block
+styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/technologies.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<h1>JavaScript</h1>
+<main>
+  <section class="overview">
+    <h2>Overview</h2>
+    <p>
+      <strong>JavaScript</strong> is a versatile programming language essential
+      for creating interactive and dynamic web applications. It is widely used
+      alongside HTML and CSS to enhance user experience by enabling complex
+      behaviors on web pages.
+    </p>
+  </section>
+  <section class="features">
+    <h2>Key Features of JavaScript</h2>
+    <ul>
+      <li>
+        <strong>DOM Manipulation:</strong> Allows developers to interact with
+        and modify the structure of web pages dynamically.
+      </li>
+      <li>
+        <strong>Event Handling:</strong> Facilitates the response to user
+        actions such as clicks, keyboard inputs, and mouse movements.
+      </li>
+      <li>
+        <strong>AJAX:</strong> Enables asynchronous communication with servers,
+        allowing web pages to update without reloading.
+      </li>
+      <li>
+        <strong>JSON:</strong> A lightweight data-interchange format that is
+        easy to read and write for humans and machines.
+      </li>
+      <li>
+        <strong>Fetch API:</strong> Provides a modern and flexible method for
+        making network requests.
+      </li>
+      <li>
+        <strong>Promises and Async/Await:</strong> Simplifies asynchronous
+        programming, making it easier to work with asynchronous operations.
+      </li>
+      <li>
+        <strong>LocalStorage:</strong> Allows for storing data locally within
+        the user's browser, enabling persistent data storage across sessions.
+      </li>
+      <li>
+        <strong>ES6+ Features:</strong> Includes modern syntax and features such
+        as let/const, arrow functions, template literals, destructuring,
+        modules, and more.
+      </li>
+    </ul>
+  </section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <div class="project-icon">⌚</div>
+      <div class="project-description">
+        <h3>JS Clock</h3>
+        <p>
+          Built a real-time clock application using JavaScript. This project
+          displays the current time and updates every second.
+        </p>
+        <ul>
+          <li>
+            <strong>Real-time Updates:</strong> The clock updates every second
+            to show the current time.
+          </li>
+          <li>
+            <strong>Digital Display:</strong> Displays time in a digital clock
+            format (HH:MM:SS).
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-icon">📋</div>
+      <div class="project-description">
+        <h3>JS To Do List</h3>
+        <p>
+          Developed a to-do list application using JavaScript. This project
+          allows users to add, remove, and mark tasks as complete.
+        </p>
+        <ul>
+          <li>
+            <strong>Task Management:</strong> Users can add, remove, and mark
+            tasks as complete.
+          </li>
+          <li>
+            <strong>Local Storage:</strong> Tasks are stored in the browser's
+            local storage, allowing data persistence across sessions.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

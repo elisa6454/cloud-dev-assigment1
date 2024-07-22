@@ -1,23 +1,151 @@
-{% extends 'base.html' %} {% block title %}HTML & CSS{% endblock %} {% block
-content %}
-<h1>HTML & CSS</h1>
-<p>
-  HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the core
-  technologies for building and designing web pages. HTML defines the structure
-  and content of a web page, while CSS defines its style and layout.
-</p>
-<ul>
-  <li>HTML: A markup language that defines the structure of web documents.</li>
-  <li>
-    CSS: A stylesheet language that describes the presentation of web documents.
-  </li>
-  <li>
-    HTML5: The latest standard supporting multimedia elements like video and
-    audio.
-  </li>
-  <li>
-    CSS3: The latest standard with advanced styling features like animations,
-    gradients, and transforms.
-  </li>
-</ul>
+{% extends 'base.html' %} {% block title %}HTML5 & CSS3{% endblock %} {% block
+styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/technologies.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<h1>HTML5 & CSS3</h1>
+<main>
+  <section class="overview">
+    <h2>Overview</h2>
+    <p>
+      <strong>HTML5</strong> is the latest version of the Hypertext Markup
+      Language used for creating web pages and web applications. It introduces
+      new elements and attributes that provide more functionality and
+      flexibility for web developers.
+    </p>
+    <p>
+      <strong>CSS3</strong> is the latest version of the Cascading Style Sheets
+      language used to define the presentation and layout of HTML documents. It
+      includes new features such as advanced selectors, animations, and flexible
+      layouts.
+    </p>
+  </section>
+  <section class="features">
+    <h2>Key Features of HTML5</h2>
+    <ul>
+      <li>
+        <strong>Semantic Elements:</strong> New elements like
+        <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+        <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> provide
+        better document structure and accessibility.
+      </li>
+      <li>
+        <strong>Form Controls:</strong> Enhanced input types and attributes for
+        better user input handling, such as
+        <code>&lt;input type="email"&gt;</code> and
+        <code>&lt;input type="date"&gt;</code>.
+      </li>
+      <li>
+        <strong>Multimedia:</strong> Native support for audio and video elements
+        (<code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>) without the
+        need for external plugins.
+      </li>
+      <li>
+        <strong>Graphics:</strong> The <code>&lt;canvas&gt;</code> element
+        allows for dynamic, scriptable rendering of 2D shapes and bitmap images.
+      </li>
+      <li>
+        <strong>Storage:</strong> New APIs like localStorage and sessionStorage
+        for storing data on the client-side.
+      </li>
+      <li>
+        <strong>WebSockets:</strong> API for bi-directional communication
+        between the browser and server.
+      </li>
+    </ul>
+    <h2>Key Features of CSS3</h2>
+    <ul>
+      <li>
+        <strong>Layout:</strong> Flexbox and Grid Layout for creating complex,
+        responsive layouts with ease.
+      </li>
+      <li>
+        <strong>Typography:</strong> Advanced font and text properties for
+        better control over typography.
+      </li>
+      <li>
+        <strong>Color and Background:</strong> Support for gradients, shadows,
+        and multiple background images.
+      </li>
+      <li>
+        <strong>Animation:</strong> Keyframe-based animations and transitions
+        for dynamic user interfaces.
+      </li>
+      <li>
+        <strong>Media Queries:</strong> Apply different styles based on device
+        characteristics, such as screen size and resolution.
+      </li>
+    </ul>
+  </section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <div class="project-icon">🌐</div>
+      <div class="project-description">
+        <h3>Portfolio Website</h3>
+        <p>
+          Developed a personal portfolio website using Flask and Jinja2,
+          featuring a responsive design that adapts to different devices. The
+          site includes a project gallery, blog, and contact form.
+        </p>
+        <ul>
+          <li>
+            <strong>Responsive Design:</strong> The website adjusts its layout
+            and content to fit different screen sizes and devices, providing a
+            consistent user experience across all platforms.
+          </li>
+          <li>
+            <strong>Project Gallery:</strong> Showcases various projects with
+            detailed descriptions and images, allowing visitors to explore my
+            work.
+          </li>
+          <li>
+            <strong>Blog Section:</strong> Regularly updated with articles and
+            tutorials on web development, sharing insights and knowledge with
+            the community.
+          </li>
+          <li>
+            <strong>Contact Form:</strong> Enables visitors to get in touch with
+            me easily, facilitating communication and potential collaborations.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-icon">📱</div>
+      <div class="project-description">
+        <h3>KokoaTalk Clone</h3>
+        <p>
+          Built a KokoaTalk clone using HTML5 and CSS3. This project replicates
+          the popular messaging app's interface, including a login page, a
+          friends list, a chat interface, and a settings page.
+        </p>
+        <ul>
+          <li>
+            <strong>Login Page:</strong> A secure login interface that mimics
+            the original app, allowing users to sign in with their email and
+            password.
+          </li>
+          <li>
+            <strong>Friends List:</strong> Displays the user's friends with
+            options to start a chat or view profiles.
+          </li>
+          <li>
+            <strong>Chat Interface:</strong> A functional chat window where
+            users can send and receive messages in real-time, complete with time
+            stamps.
+          </li>
+          <li>
+            <strong>Settings Page:</strong> Allows users to customize their
+            profiles, manage notifications, and adjust other preferences.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
 {% endblock %}

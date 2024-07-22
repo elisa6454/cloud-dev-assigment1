@@ -1,15 +1,103 @@
-{% extends 'base.html' %} {% block title %}React{% endblock %} {% block content
+{% extends 'base.html' %} {% block title %}React{% endblock %} {% block styles
 %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/technologies.css') }}"
+/>
+{% endblock %} {% block content %}
+
 <h1>React</h1>
-<p>
-  React is a JavaScript library developed by Facebook for building user
-  interfaces. It uses a component-based architecture, allowing developers to
-  create reusable UI components.
-</p>
-<ul>
-  <li>Component-based architecture</li>
-  <li>Uses Virtual DOM</li>
-  <li>One-way data binding</li>
-  <li>Strong community and ecosystem</li>
-</ul>
+<main>
+  <section class="overview">
+    <h2>Overview</h2>
+    <p>
+      <strong>React</strong> is a JavaScript library developed by Facebook for
+      building user interfaces. It uses a component-based architecture, allowing
+      developers to create reusable UI components and manage the application's
+      state effectively.
+    </p>
+    <p>
+      React makes it painless to create interactive UIs. Design simple views for
+      each state in your application, and React will efficiently update and
+      render just the right components when your data changes.
+    </p>
+  </section>
+
+  <section class="features">
+    <h2>Key Features of React</h2>
+    <ul>
+      <li>
+        <strong>Component-based Architecture:</strong> Build encapsulated
+        components that manage their own state, then compose them to make
+        complex UIs.
+      </li>
+      <li>
+        <strong>Virtual DOM:</strong> React creates an in-memory data structure
+        cache, computes the resulting differences, and then updates the
+        browser’s displayed DOM efficiently.
+      </li>
+      <li>
+        <strong>One-way Data Binding:</strong> Ensures that data flows in a
+        single direction, making the application more predictable and easier to
+        debug.
+      </li>
+      <li>
+        <strong>Strong Community and Ecosystem:</strong> A large ecosystem of
+        libraries and tools that work well with React, such as Redux for state
+        management, React Router for navigation, and many more.
+      </li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <div class="project-icon">📋</div>
+      <div class="project-description">
+        <h3>Personal Kanban Board</h3>
+        <p>
+          Developed a Personal Kanban board application using React, TypeScript,
+          and Firebase. This project helps users manage their tasks efficiently
+          with features like drag-and-drop, data persistence, and cloud storage.
+        </p>
+        <ul>
+          <li>
+            <strong>React:</strong> Utilized React for building a dynamic and
+            responsive user interface with component-based architecture.
+          </li>
+          <li>
+            <strong>TypeScript:</strong> Leveraged TypeScript for static typing,
+            which improves code quality and maintainability.
+          </li>
+          <li>
+            <strong>Drag-and-Drop:</strong> Implemented drag-and-drop
+            functionality to allow users to move tasks between different stages
+            (To Do, Doing, Done).
+          </li>
+          <li>
+            <strong>Firebase:</strong> Integrated Firebase for real-time
+            database functionalities, user authentication, and cloud storage.
+          </li>
+          <li>
+            <strong>Data Persistence:</strong> Ensured task data is saved and
+            synchronized using Firebase Firestore.
+          </li>
+          <li>
+            <strong>Archive and Trash Boards:</strong> Added separate boards for
+            archiving completed tasks and managing deleted tasks.
+          </li>
+          <li>
+            <strong>Search and Filter:</strong> Enabled users to search and
+            filter tasks for better task management.
+          </li>
+          <li>
+            <strong>Dark Mode:</strong> Implemented a dark mode feature to
+            enhance user experience and reduce eye strain in low-light
+            environments.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
 {% endblock %}

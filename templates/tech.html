@@ -1,11 +1,36 @@
 {% extends 'base.html' %} {% block title %}Technologies{% endblock %} {% block
-content %}
-<h1>My Favorite Technologies</h1>
-<ul>
-  <li><a href="{{ url_for('tech_html_css') }}">HTML & CSS</a></li>
-  <li><a href="{{ url_for('tech_react') }}">React</a></li>
-  <li>
-    <a href="{{ url_for('tech_blender') }}">Blender</a>
-  </li>
-</ul>
+styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/tech.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="tech-container">
+  <h1>My Favorite Technologies</h1>
+  <ul class="tech-list">
+    <li>
+      <a href="{{ url_for('tech_html_css') }}"
+        ><img
+          src="{{ url_for('static', filename='img/htmlcss.png') }}"
+          alt="HTML & CSS"
+      /></a>
+    </li>
+
+    <li>
+      <a href="{{ url_for('tech_javascript') }}"
+        ><img
+          src="{{ url_for('static', filename='img/js.png') }}"
+          alt="Javsscript"
+      /></a>
+    </li>
+
+    <li>
+      <a href="{{ url_for('tech_react') }}"
+        ><img
+          src="{{ url_for('static', filename='img/react.png') }}"
+          alt="React"
+      /></a>
+    </li>
+  </ul>
+</div>
 {% endblock %}
