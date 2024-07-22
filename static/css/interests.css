@@ -1,3 +1,7 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
 h1 {
   color: #4a00e0;
   margin-bottom: 40px;
@@ -5,11 +9,9 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  color: #4a00e0;
-  margin-top: 40px;
-  font-size: 2rem;
-  text-align: left;
+p {
+  color: #333;
+  font-size: 1rem;
 }
 
 .interests {
@@ -23,37 +25,39 @@ h2 {
 }
 
 .interests ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .interests li {
   margin-bottom: 20px;
-  position: relative;
-  padding-left: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
 }
 
-.interests li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
+.interests li:hover {
+  background: #f1f1f1;
+  transform: translateY(-5px);
+}
+
+.interests .interest-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.interests .bullet {
   color: #4a00e0;
   font-size: 2rem;
-  line-height: 1rem;
-  top: 0;
+  margin-right: 10px;
 }
 
 .interests strong {
-  display: block;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #333;
-  margin-bottom: 5px;
-}
-
-.interests p {
-  margin: 5px 0;
-  font-size: 1rem;
-  color: #555;
 }
 
 .interests p.goal {
