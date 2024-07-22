@@ -26,9 +26,9 @@ def tech_html_css():
 def tech_react():
     return render_template('tech_react.html')
 
-@app.route('/tech/blender')
-def tech_blender():
-    return render_template('tech_blender.html')
+@app.route('/tech/javascript')
+def tech_javascript():
+    return render_template('tech_javascript.html')
 
 @app.route('/interests')
 def interests():
