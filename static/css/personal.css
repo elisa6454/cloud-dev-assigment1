@@ -23,8 +23,9 @@
 }
 
 .profile-img {
-  width: 400px;
+  width: 340px;
   height: 400px;
+  padding-top: 20px;
 }
 
 .personal-info .right {
