@@ -1,5 +1,58 @@
 {% extends 'base.html' %} {% block title %}Interests{% endblock %} {% block
-content %}
+styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/interests.css') }}"
+/>
+{% endblock %} {% block content %}
+
 <h1>Interests</h1>
-<p>Here are some of my interests</p>
+
+<div class="interests">
+  <ul>
+    <li>
+      <strong>Skiing:</strong>
+      <p>Enjoy skiing with family during the winter season.</p>
+      <p>Future Goal: Explore more skiing resorts around the world.</p>
+    </li>
+    <li>
+      <strong>Home Interior:</strong>
+      <p>
+        Loved rearranging furniture and decorating the house since childhood.
+      </p>
+      <p>
+        Goal: Create a home filled with my own tastes when I get a house in the
+        future.
+      </p>
+    </li>
+    <li>
+      <strong>Cooking:</strong>
+      <p>
+        Developed a love for cooking from enjoying delicious meals, and the
+        happiness of sharing them with family and friends.
+      </p>
+      <p>Goal: Try making many new dishes.</p>
+    </li>
+    <li>
+      <strong>Baking:</strong>
+      <p>
+        Started baking with a friend after moving to Ireland, enjoying it for
+        the same reasons as cooking, especially the love for delicious desserts.
+      </p>
+      <p>Quote: "Baking is both an art and a science."</p>
+    </li>
+    <li>
+      <strong>Video Editing:</strong>
+      <p>
+        Developed an interest in video editing after starting a YouTube vlog and
+        learning the skills on my own.
+      </p>
+    </li>
+    <li>
+      <strong>Photography:</strong>
+      <p>Enjoy taking photos.</p>
+      <p>Future Goal: Improve my photography skills and start a photo blog.</p>
+    </li>
+  </ul>
+</div>
 {% endblock %}

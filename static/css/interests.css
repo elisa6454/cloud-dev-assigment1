@@ -1,0 +1,67 @@
+h1 {
+  color: #4a00e0;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  color: #4a00e0;
+  margin-top: 40px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.interests {
+  background: #fff;
+  margin: 20px auto;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.interests ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.interests li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.interests li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a00e0;
+  font-size: 2rem;
+  line-height: 1rem;
+  top: 0;
+}
+
+.interests strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.interests p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.interests p.goal {
+  font-weight: bold;
+  color: #4a00e0;
+}
+
+.interests p.quote {
+  font-style: italic;
+  color: #777;
+}
