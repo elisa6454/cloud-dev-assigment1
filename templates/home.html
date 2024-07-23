@@ -9,25 +9,27 @@
 <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
 
 <form action="{{ url_for('submit') }}" method="POST" class="contact-form">
-  <div class="form-group">
-    <label for="name">Your Name</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Enter your name"
-      required
-    />
-  </div>
-  <div class="form-group">
-    <label for="email">Email Address</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Enter your email address"
-      required
-    />
+  <div class="form-row">
+    <div class="form-group half-width">
+      <label for="name">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group half-width">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+    </div>
   </div>
   <div class="form-group full-width">
     <label for="message">Your Message</label>
